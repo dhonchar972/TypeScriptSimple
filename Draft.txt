@@ -1,0 +1,26 @@
+mkdir test1
+cd test1
+
+
+// npm install --save-dev typescript eslint @types/node
+
+//npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+//touch .eslintrc
+
+
+npm init
+tsc --init
+tslint --init
+
+
+npx create-react-app my-app --template typescript
+
+
+npm install --save-dev typescript
+npm install eslint --save-dev
+npx eslint --init
+
+tsc -w  //auto compile
+
+npm i ts-node
+ts-node index.ts //does't compile js
