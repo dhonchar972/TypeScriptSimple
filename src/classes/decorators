@@ -1,0 +1,16 @@
+@serializable // decorator
+class APIPayload {
+  getValue(): Payload {
+    // ...
+  }
+}
+
+/////SAME/////////////
+
+let APIPayload = serializable(
+  class APIPayload {
+    getValue(): Payload {
+      // ...
+    }
+  }
+);

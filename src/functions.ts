@@ -180,7 +180,7 @@ type Filter = {
   (array: object[], f: (item: object) => boolean): object[];
 };
 
-//обобщения(type generalization)
+//обобщения(generics)
 type FilterGeneralization = {
   <T>(array: T[], f: (item: T) => boolean): T[];
 };
