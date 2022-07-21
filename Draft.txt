@@ -24,3 +24,10 @@ tsc -w  //auto compile
 
 npm i ts-node
 ts-node ./src/index.ts //does't compile js
+
+
+//TSLint no-invalid-this.
+
+function fancyDate() {
+  return `${this.getDate()}/${this.getMonth}/${this.getFullYear()}` // "this" is a magic shit!!!!!!!
+}
