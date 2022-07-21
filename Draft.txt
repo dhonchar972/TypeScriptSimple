@@ -23,4 +23,4 @@ npx eslint --init
 tsc -w  //auto compile
 
 npm i ts-node
-ts-node index.ts //does't compile js
+ts-node ./src/index.ts //does't compile js
