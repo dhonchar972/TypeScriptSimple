@@ -40,3 +40,33 @@ XMLHTTPRequest - AJAX
 Асинхронка в js построенна на обратных вызовах(callback) - функция пережающаяся в качестве параметра в другую функцию
 
 RxJS - реактивная библиотека входящая по умолчанию в состав Angular(как и TypeScript)!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+let locale = await import('locale_us-en') // отложенний импорт или импорт по требованию
+
+// Get.ts
+namespace Network {
+export function get<T>(url: string): Promise<T> {
+// ...
+}
+}
+// App.ts
+namespace App {
+Network.get<GitRepo>('https://api.github.com/repos/Microsoft/
+typescript')
+}
+
+npm install lodash –save # Установить Lodash
+npm install @types/lodash --save-dev # Установить декларациитипов для Lodash
+
+если все глухо - @ts-ignore
+// @ts-ignore
+import Unsafe from 'untyped-module'
+
+исходники - src/
+скомпиленний код - dist/
+
+Артефакты, которые может сгенерировать за вас TSC:
+  Файлы JavaScript - ".js" - {"emitDeclarationOnly": false}
+  Карты кода ".js.map" - {"sourceMap": true}
+  Декларации типов - ".d.ts" - {"declaration": true}
+  Карты деклараций - ".d.ts.map" - {"declarationMap": true}
